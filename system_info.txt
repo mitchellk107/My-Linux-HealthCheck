@@ -1,0 +1,131 @@
+System information – Sun Jul  6 02:22:41 PM MDT 2025
+----------------------------
+
+Uptime:
+ 14:22:41 up  4:32,  2 users,  load average: 0.63, 0.81, 0.51
+
+Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           4.4Gi       3.3Gi       213Mi       111Mi       1.2Gi       1.1Gi
+Swap:          4.0Gi       261Mi       3.7Gi
+
+Disk usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           448M  1.8M  446M   1% /run
+/dev/sda2        30G   12G   17G  42% /
+tmpfs           2.2G   28M  2.2G   2% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           2.2G   88K  2.2G   1% /tmp
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           448M  132K  448M   1% /run/user/1000
+
+CPU information:
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               1
+On-line CPU(s) list:                  0
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD Ryzen 7 5800U with Radeon Graphics
+CPU family:                           25
+Model:                                80
+Thread(s) per core:                   1
+Core(s) per socket:                   1
+Socket(s):                            1
+Stepping:                             0
+BogoMIPS:                             3792.78
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 movbe popcnt aes rdrand hypervisor lahf_lm cr8_legacy abm sse4a misalignsse 3dnowprefetch vmmcall fsgsbase bmi1 bmi2 invpcid rdseed adx clflushopt sha_ni arat debug_swap
+Hypervisor vendor:                    KVM
+Virtualization type:                  full
+L1d cache:                            32 KiB (1 instance)
+L1i cache:                            32 KiB (1 instance)
+L2 cache:                             512 KiB (1 instance)
+L3 cache:                             16 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Ghostwrite:             Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Vulnerable: Safe RET, no microcode
+Vulnerability Spec store bypass:      Not affected
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+Network interfaces:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:b1:99:fa brd ff:ff:ff:ff:ff:ff
+    altname enx080027b199fa
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 70114sec preferred_lft 70114sec
+    inet6 fd17:625c:f037:2:5f63:4d20:94fb:93b0/64 scope global temporary dynamic 
+       valid_lft 86323sec preferred_lft 14323sec
+    inet6 fd17:625c:f037:2:a00:27ff:feb1:99fa/64 scope global dynamic mngtmpaddr proto kernel_ra 
+       valid_lft 86323sec preferred_lft 14323sec
+    inet6 fe80::a00:27ff:feb1:99fa/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+
+Top processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+mitchel+   10347  166  0.1  21492  4600 pts/0    R+   14:22   0:00 ps aux --sort=-%cpu
+mitchel+    1792  1.8  9.4 3596716 431820 ?      SLsl 09:51   5:01 /usr/bin/gnome-shell
+mitchel+    3336  1.4  6.7 1466311624 308980 ?   Sl   09:53   3:49 /snap/code/198/usr/share/code/code --type=zygote --no-sandbox
+mitchel+    4035  1.2 12.2 12004520 561660 ?     Sl   09:56   3:24 /snap/firefox/6436/usr/lib/firefox/firefox
+
+System logs (last 20 lines):
+2025-07-06T14:13:35.991957-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832815.984:814): apparmor="DENIED" operation="open" class="file" info="Failed name lookup - disconnected path" error=-13 profile="/usr/bin/man" name="apparmor/.null" pid=10040 comm="preconv" requested_mask="wr" denied_mask="wr" fsuid=1000 ouid=0
+2025-07-06T14:13:35.991960-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832815.984:815): apparmor="DENIED" operation="open" class="file" info="Failed name lookup - disconnected path" error=-13 profile="man_groff" name="apparmor/.null" pid=10040 comm="preconv" requested_mask="wr" denied_mask="wr" fsuid=1000 ouid=0
+2025-07-06T14:13:35.991962-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832815.984:816): apparmor="DENIED" operation="file_inherit" class="file" profile="man_groff" name="/snap/code/198/usr/share/code/v8_context_snapshot.bin" pid=10040 comm="preconv" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2025-07-06T14:14:30.521809-06:00 mitchellkelly107-VirtualBox kernel: kauditd_printk_skb: 42 callbacks suppressed
+2025-07-06T14:14:30.521834-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.509:859): apparmor="DENIED" operation="file_inherit" class="net" profile="man_groff" pid=10097 comm="preconv" family="unix" sock_type="stream" protocol=0 requested="send receive" denied="send receive" addr=none peer_addr=none peer="snap.code.code"
+2025-07-06T14:14:30.572728-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.562:860): apparmor="DENIED" operation="file_inherit" class="net" profile="man_filter" pid=10101 comm="col" family="unix" sock_type="stream" protocol=0 requested="send receive" denied="send receive" addr=none peer_addr=none peer="snap.code.code"
+2025-07-06T14:14:30.592919-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.588:861): apparmor="DENIED" operation="open" class="file" info="Failed name lookup - disconnected path" error=-13 profile="/usr/bin/man" name="apparmor/.null" pid=10097 comm="preconv" requested_mask="wr" denied_mask="wr" fsuid=1000 ouid=0
+2025-07-06T14:14:30.592943-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.588:862): apparmor="DENIED" operation="open" class="file" info="Failed name lookup - disconnected path" error=-13 profile="man_groff" name="apparmor/.null" pid=10097 comm="preconv" requested_mask="wr" denied_mask="wr" fsuid=1000 ouid=0
+2025-07-06T14:14:30.592945-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.588:863): apparmor="DENIED" operation="file_inherit" class="file" profile="man_groff" name="/snap/code/198/usr/share/code/v8_context_snapshot.bin" pid=10097 comm="preconv" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2025-07-06T14:14:30.592947-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.588:864): apparmor="DENIED" operation="file_inherit" class="file" profile="man_groff" name="/home/mitchellkelly107/.config/Code/logs/20250706T095323/window1/exthost/exthost.log" pid=10097 comm="preconv" requested_mask="a" denied_mask="a" fsuid=1000 ouid=1000
+2025-07-06T14:14:30.592948-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.588:865): apparmor="DENIED" operation="file_inherit" class="file" profile="man_groff" name="/home/mitchellkelly107/.config/Code/logs/20250706T095323/window1/exthost/extHostTelemetry.log" pid=10097 comm="preconv" requested_mask="a" denied_mask="a" fsuid=1000 ouid=1000
+2025-07-06T14:14:30.592949-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.588:866): apparmor="DENIED" operation="file_inherit" class="file" profile="man_groff" name="/snap/code/198/usr/share/code/v8_context_snapshot.bin" pid=10097 comm="preconv" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+2025-07-06T14:14:30.660422-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.658:867): apparmor="DENIED" operation="open" class="file" info="Failed name lookup - disconnected path" error=-13 profile="/usr/bin/man" name="apparmor/.null" pid=10101 comm="col" requested_mask="wr" denied_mask="wr" fsuid=1000 ouid=0
+2025-07-06T14:14:30.660446-06:00 mitchellkelly107-VirtualBox kernel: audit: type=1400 audit(1751832870.658:868): apparmor="DENIED" operation="open" class="file" info="Failed name lookup - disconnected path" error=-13 profile="man_filter" name="apparmor/.null" pid=10101 comm="col" requested_mask="wr" denied_mask="wr" fsuid=1000 ouid=0
+2025-07-06T14:15:01.910935-06:00 mitchellkelly107-VirtualBox CRON[10204]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-07-06T14:17:01.945045-06:00 mitchellkelly107-VirtualBox CRON[10253]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-07-06T14:19:49.499926-06:00 mitchellkelly107-VirtualBox gnome-shell[1792]: libinput error: event4  - ImExPS/2 Generic Explorer Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+2025-07-06T14:20:03.127683-06:00 mitchellkelly107-VirtualBox systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2025-07-06T14:20:03.431147-06:00 mitchellkelly107-VirtualBox systemd[1]: sysstat-collect.service: Deactivated successfully.
+2025-07-06T14:20:03.440815-06:00 mitchellkelly107-VirtualBox systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+
+Report complete.
+
+Network interfaces:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:b1:99:fa brd ff:ff:ff:ff:ff:ff
+    altname enx080027b199fa
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 70077sec preferred_lft 70077sec
+    inet6 fd17:625c:f037:2:5f63:4d20:94fb:93b0/64 scope global temporary dynamic 
+       valid_lft 86286sec preferred_lft 14286sec
+    inet6 fd17:625c:f037:2:a00:27ff:feb1:99fa/64 scope global dynamic mngtmpaddr proto kernel_ra 
+       valid_lft 86286sec preferred_lft 14286sec
+    inet6 fe80::a00:27ff:feb1:99fa/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
